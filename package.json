@@ -1,0 +1,14 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && yarn add) || (cd client && yarn add)",
+    "server": "node ./server/server.js",
+    "client": "cd client && yarn start"
+  },
+  
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
